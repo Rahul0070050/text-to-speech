@@ -14,7 +14,7 @@ window.speechSynthesis.onvoiceschanged = () => {
   typeOfVoices.forEach((voice, idx) => {
     voiceSelector.options[idx] = new Option(voice.name, idx);
   });
-  alert(typeOfVoices[0]);
+  // alert(typeOfVoices[0]);
   speeech.voice = typeOfVoices[0];
 };
 
