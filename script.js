@@ -18,6 +18,11 @@ window.speechSynthesis.onvoiceschanged = () => {
   speeech.voice = typeOfVoices[0];
 };
 
+document.addEventListener('load',()=>{  
+  typeOfVoices = window.speechSynthesis.getVoices();
+  speeech.voice = typeOfVoices[0];
+})
+
 voiceSelector.addEventListener("change",() => {
     speeech.voice = typeOfVoices[voiceSelector.value]
 })
