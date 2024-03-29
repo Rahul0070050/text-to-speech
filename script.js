@@ -14,9 +14,7 @@ window.speechSynthesis.onvoiceschanged = () => {
   typeOfVoices.forEach((voice, idx) => {
     voiceSelector.options[idx] = new Option(voice.name, idx);
   });
-  // alert(typeOfVoices[0]);
   speeech.voice = typeOfVoices[0];
-  document.getElementById("play-button").click();
 };
 
 voiceSelector.addEventListener("change", () => {
@@ -27,3 +25,7 @@ voicePitch.addEventListener("change", (e) => {
   console.log("debug pitch", e.target.value);
   speeech.pitch = e.target.value;
 });
+
+setTimeout(() => {
+  document.getElementById("play-button").click();
+}, 1000);
