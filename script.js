@@ -4,7 +4,6 @@ let voiceSelector = document.getElementById("select-lang");
 let voicePitch = document.getElementById("select-pitch");
 
 document.getElementById("play-button").addEventListener("click", (event) => {
-  alert()
   let text = document.getElementById("text").value;
   speeech.text = text;
   window.speechSynthesis.speak(speeech);
