@@ -39,7 +39,7 @@
   background-color: #ffffff0a;
   border-radius: 25px;
 }
-.speach-section .play-btn {
+.speach-section button {
   padding: 0.5rem 2rem;
   background-color: black;
   box-shadow: rgba(255, 255, 255, 0.322) 0px 3px 8px;
@@ -49,11 +49,30 @@
   color: white;
   margin-top: 1rem;
 }
-
-.speach-section select {
+.selecter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.speach-section #select-pitch {
   padding: 0.5rem 1rem;
   height: 2.5rem;
-  width: 100%;
+  width: 20%;
+  border-radius: 10px;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 1rem;
+  appearance: none;
+  background-image: url(./icon.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 10px;
+}
+.speach-section #select-lang {
+  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  width: 79%;
   border-radius: 10px;
   color: black;
   background-color: lightgoldenrodyellow;
@@ -81,7 +100,6 @@
   }
   .info-section h2 {
     font-size: 2rem;
-
   }
 
   .info-section p {
@@ -89,5 +107,12 @@
   }
   .info-section {
     margin-top: 1rem !important;
+  }
+
+  .speach-section #select-pitch {
+    width: 28%;
+  }
+  .speach-section #select-lang {
+    width: 70%;
   }
 }

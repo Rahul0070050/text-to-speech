@@ -1,12 +1,12 @@
 const speeech = new SpeechSynthesisUtterance();
 let typeOfVoices = [];
-let voiceSelector = document.getElementById("select");
+let voiceSelector = document.getElementById("select-lang");
+let voicePitch = document.getElementById("select-pitch");
 
 document.getElementById("play-button").addEventListener("click", (event) => {
   let text = document.getElementById("text").value;
   speeech.text = text;
   window.speechSynthesis.speak(speeech);
-  // console.log(text);
 });
 
 window.speechSynthesis.onvoiceschanged = () => {
@@ -20,3 +20,10 @@ window.speechSynthesis.onvoiceschanged = () => {
 voiceSelector.addEventListener("change", () => {
   speeech.voice = typeOfVoices[voiceSelector.value];
 });
+
+voicePitch.addEventListener("change", (e) => {
+  console.log("debug pitch", e.target.value);
+  speeech.pitch = e.target.value
+});
+
+document.getElementById("play-button").click()
