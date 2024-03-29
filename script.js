@@ -25,7 +25,3 @@ voicePitch.addEventListener("change", (e) => {
   console.log("debug pitch", e.target.value);
   speeech.pitch = e.target.value;
 });
-
-setTimeout(() => {
-  document.getElementById("play-button").click();
-}, 1000);
