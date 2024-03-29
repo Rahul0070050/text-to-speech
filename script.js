@@ -11,6 +11,7 @@ document.getElementById("play-button").addEventListener("click", (event) => {
 
 window.speechSynthesis.onvoiceschanged = () => {
   typeOfVoices = window.speechSynthesis.getVoices();
+  console.log('debug');
   typeOfVoices.forEach((voice, idx) => {
     voiceSelector.options[idx] = new Option(voice.name, idx);
   });
