@@ -23,7 +23,9 @@ voiceSelector.addEventListener("change", () => {
 
 voicePitch.addEventListener("change", (e) => {
   console.log("debug pitch", e.target.value);
-  speeech.pitch = e.target.value
+  speeech.pitch = e.target.value;
 });
 
-document.getElementById("play-button").click()
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("play-button").click();
+});
