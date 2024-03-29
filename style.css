@@ -1,41 +1,85 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
 }
 .container-fluid {
-    height: 100vh;
-    width: 100vw;
-    padding: 4rem 0;
-    background-color: #060606;
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem 0;
+  background-color: #060606;
 }
 .info-section {
-    padding: 0 2rem !important;
-    margin-top: 5rem !important;
+  padding: 0 2rem !important;
+  margin-top: 5rem !important;
 }
 .info-section h1 {
-    font-family: "Niconne", cursive;
-    font-size: 6rem;
+  font-family: "Niconne", cursive;
+  font-size: 6rem;
 }
 .info-section h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: xx-large;
 }
 .info-section p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
 }
 
 .speach-section {
-    margin-top: 5rem !important;
+  padding: 3rem 2rem !important;
 }
 
 .speach-section #text {
-    width: 100%;
+  width: 100%;
+  height: 80%;
+  padding: 1rem;
+  background-color: #ffffff0a;
+  border-radius: 25px;
+}
+.speach-section .play-btn {
+  padding: 0.5rem 2rem;
+  background-color: black;
+  box-shadow: rgba(255, 255, 255, 0.322) 0px 3px 8px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.speach-section select {
+  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 10px;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 1rem;
+  appearance: none;
+  background-image: url(./icon.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 10px;
+}
+
+.speach-section select option {
+  color: #060606;
+}
+.speach-section .play-btn .fa-play {
+  margin-right: 0.2rem;
+}
+@media only screen and (max-width: 600px) {
+  .container-fluid {
     height: 100%;
-    padding: 1rem;
-    background-color: #ffffff0a;
-    border-radius: 25px;
+  }
+  .info-section h1 {
+    font-size: 4rem;
+  }
+  .info-section {
+  margin-top: 1rem !important;
+  } 
 }
